@@ -3,7 +3,33 @@
 
 ---
 
-## 2026-05-24
+## 2026-05-24 (session 2)
+
+### v4-framer — New portfolio build (iamframer.com replica)
+- Created `Portfolios/v4-framer/` with `index.html`, `style.css`, `script.js`
+- Full dark-theme replica of iamframer.com structure: Nav, Hero, Editor, CMS, Localization, Live Collab, Fonts, Icons, Newsletter, Footer
+- Assets reference `../../References/IamFramer/I am Framer_files/` (local scrape, gitignored)
+- Hero: `<span class="dim">I'm&nbsp;</span><span class="bright">Priyanka Shanmugham</span>` — grey + white split
+- Nav logo: `PS`
+- Font: Inter via Google Fonts (GT Walsheim substitute)
+- Design tokens: `--bg: #000000`, `--accent: #009EFF`, `--border: #242424`, `--muted: #777777`
+- Hero title: `clamp(2rem, 5.5vw, 6rem)` to fit long name on one line
+
+### v0-home — Added Project 04 tile + reordered grid
+- Active portfolio (v3) moved to position 1 in the works grid
+- v4-framer added as Project 04 with `is-dev` badge, linked to `../Portfolios/v4-framer/index.html`
+- Thumbnail: screenshot taken via dev-browser, saved to `v0-home/assets/thumbnails/v4-framer.png`
+- Grid order: v3 (Active) → v2a (Dev) → v2b (Dev) → v4 (Dev)
+
+### Repo cleanup
+- Moved `newmix.html`, `newmix_files/`, `aero-button.html` from root → `References/`
+- Added `References/` to `.gitignore` (all reference scrapes now live there, gitignored)
+- Removed 83 previously-tracked files from git history (newmix assets etc.)
+- Root now only contains: `v0-home/`, `Portfolios/`, `logs/`, `index.html`, `.gitignore`
+
+---
+
+## 2026-05-24 (session 1)
 
 ### Repo reorganisation
 - Created `Portfolios/` folder; moved `v1-cinematic/`, `v2-newmixcoffee-v1/`, `v2-newmixcoffee-v2/`, `v3-real-content/` into it
@@ -42,24 +68,28 @@ priyanka-3d/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
-│   ├── name-effect.js
-│   └── assets/thumbnails/
+│   ├── ripple-bg.js
+│   └── assets/thumbnails/  ← v3-real-content.png, v4-framer.png, etc.
 ├── Portfolios/           ← All portfolio versions
 │   ├── v1-cinematic/
 │   ├── v2-newmixcoffee-v1/
 │   ├── v2-newmixcoffee-v2/
-│   └── v3-real-content/  ← Active portfolio (links: About, Resume)
-├── Priyanka_Intro1.mp4   ← Used by v3-real-content (9MB, kept at root)
-├── CLAUDE_LOG.md         ← This file
+│   ├── v3-real-content/  ← Active portfolio
+│   └── v4-framer/        ← In Development (iamframer replica)
+├── References/           ← Local reference scrapes (gitignored)
+├── logs/
+│   └── CLAUDE_LOG.md
+├── index.html            ← Root redirect to v0-home
 └── .gitignore
 ```
 
 ## Gitignored (not pushed)
-- `newmix.html` + `newmix_files/` — scraped reference
-- `Works — Jack Watkins.html` + `Works — Jack Watkins_files/` — JW reference
+- `References/` — all scraped reference sites (newmix, JW, iamframer, aero-button)
+- `Works — Jack Watkins.html` + `Works — Jack Watkins_files/` — JW reference (still at root, gitignored)
 - `my-video/` — Remotion video project (separate tool)
 - `Portfolio-Content/` — content handoff folder
 - `Priyanka-3DP/` — GitHub repo clone (tracked separately)
+- `assets/` — root-level scratch assets
 
 ## Design tokens (v0-home)
 | Token | Value |
