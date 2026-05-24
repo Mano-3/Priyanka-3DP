@@ -9,15 +9,12 @@ Thumbs.db
 my-video/
 Portfolio-Content/
 
-# Reference HTML scraped from other sites
+# Reference HTML scraped from other sites (kept in References/ which is ignored)
 Works — Jack Watkins_files/
 Works — Jack Watkins.html
-newmix.html
-newmix_files/
 References/
 
 # Scratch files at root
-aero-button.html
 assets/
 
 # Cloned sub-repo (tracked separately)
