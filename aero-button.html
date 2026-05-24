@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aero Dynamic Button</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .btn-wrap {
+      position: relative;
+      width: 180px;
+      height: 66px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      touch-action: manipulation;
+      filter: none;
+      transition: filter 250ms;
+    }
+
+    /* Layer 1 — blurred shadow beneath the button */
+    .btn-shadow {
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.25);
+      transform: translateY(3px);
+      filter: blur(2px);
+      will-change: transform, filter;
+      transition:
+        transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1),
+        filter 120ms ease-out;
+      pointer-events: none;
+    }
+
+    /* Layer 2 — darker gradient showing as the 3D side/depth */
+    .btn-side {
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      background: linear-gradient(
+        to right,
+        rgb(65, 61, 138)  0%,
+        rgb(81, 76, 174)  8%,
+        rgb(65, 61, 138) 92%,
+        rgb(48, 45, 103) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* Layer 3 — hover brightness flash */
+    .btn-hover-flash {
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      background: rgb(105, 80, 231);
+      opacity: 0;
+      transition: opacity 200ms cubic-bezier(0.3, 0.7, 0.4, 1);
+      pointer-events: none;
+    }
+
+    /* Layer 4 — front face, lifted up to create depth gap */
+    .btn-front {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: rgb(105, 80, 231);
+      padding: 16px 32px;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 1.5px;
+      line-height: 1em;
+      text-transform: uppercase;
+      transform: translateY(-6px);
+      transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+      pointer-events: none;
+    }
+
+    /* Hover — flash the front brighter */
+    button:hover .btn-hover-flash {
+      opacity: 1;
+    }
+
+    /* Pressed — face drops, shadow shrinks */
+    button.is-pressed .btn-shadow {
+      transform: translateY(1px);
+      filter: blur(1px);
+      transition:
+        transform 34ms cubic-bezier(0.3, 0.7, 0.4, 1.5),
+        filter 34ms ease-out;
+    }
+
+    button.is-pressed .btn-front {
+      transform: translateY(-2px);
+      transition: transform 34ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="btn-wrap">
+    <button type="button" aria-label="Click Me" id="aeroBtn">
+      <span class="btn-shadow"      aria-hidden="true"></span>
+      <span class="btn-side"        aria-hidden="true"></span>
+      <span class="btn-hover-flash" aria-hidden="true"></span>
+      <span class="btn-front">Click Me</span>
+    </button>
+  </div>
+
+  <script>
+    const btn = document.getElementById('aeroBtn');
+
+    btn.addEventListener('mousedown',  ()  => btn.classList.add('is-pressed'));
+    btn.addEventListener('mouseup',    ()  => btn.classList.remove('is-pressed'));
+    btn.addEventListener('mouseleave', ()  => btn.classList.remove('is-pressed'));
+    btn.addEventListener('touchstart', (e) => { e.preventDefault(); btn.classList.add('is-pressed'); }, { passive: false });
+    btn.addEventListener('touchend',   ()  => btn.classList.remove('is-pressed'));
+    btn.addEventListener('click',      ()  => window.location.href = 'v0-home/index.html');
+  </script>
+
+</body>
+</html>
