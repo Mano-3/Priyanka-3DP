@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka Shanmugham — Product Designer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-black">
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a class="logo" href="/">PS</a>
+      <nav class="nav-desktop">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="header-cta">Available</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <svg viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="bar" y="0"    width="20" height="1.4" rx="0.7" fill="white"/>
+          <rect class="bar-mid" y="6.8"  width="20" height="1.4" rx="0.7" fill="white"/>
+          <rect class="bar" y="13.6" width="20" height="1.4" rx="0.7" fill="white"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#work"    class="mobile-link">Work</a>
+      <a href="#about"   class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+    <div class="mobile-menu-bottom">
+      <span>hello@priyanka.design</span>
+    </div>
+  </div>
+
+  <!-- ─── HERO ─────────────────────────────── -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <p class="hero-sub" id="heroSub">Product Designer &middot; UX Strategist</p>
+
+    <!-- scroll hint bottom-center -->
+    <div class="hero-scroll-hint" id="heroScrollHint">
+      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 7.5L9.5 16.5L18.5 7.5"   stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M0.5 0.5L9.5 9.5L18.5 0.5"    stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ─── WHITE CONTENT (slides up over hero) ─ -->
+  <div class="content-sheet" id="contentSheet">
+
+    <!-- INTRO SPLIT -->
+    <section class="intro-split">
+      <div class="intro-left">
+        <span class="intro-tag">Designer &middot; Strategist &middot; Builder</span>
+        <h2 class="intro-quote">Design is a<br>decision, not<br>decoration.</h2>
+        <p class="intro-body">I work at the intersection of systems thinking and visual craft. Strategy comes first — then I make it beautiful enough that people don't notice how hard it was.</p>
+        <div class="intro-stats">
+          <div class="intro-stat"><span class="stat-n">5+</span><span class="stat-l">Years</span></div>
+          <div class="intro-stat"><span class="stat-n">20+</span><span class="stat-l">Projects</span></div>
+          <div class="intro-stat"><span class="stat-n">3</span><span class="stat-l">Industries</span></div>
+        </div>
+      </div>
+      <div class="intro-right">
+        <canvas id="characterCanvas"></canvas>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work-section" id="work">
+      <div class="si">
+        <p class="eyebrow">UX &middot; Strategy &middot; Systems &middot; Branding</p>
+        <div class="work-header-row">
+          <h2>Selected Work</h2>
+          <a href="#" class="view-all">View All &rarr;</a>
+        </div>
+      </div>
+
+      <div class="layer-scroller-wrap" id="layerScrollerWrap">
+        <div class="layer-scroller-sticky">
+
+          <div class="layer-scene" id="layerScene">
+
+            <a class="layer-card" data-idx="0" href="#">
+              <div class="lc-img"><img src="../newmix_files/gallery_1.webp" alt="Clarity Health" /></div>
+              <div class="lc-meta">
+                <span class="lc-n">01</span>
+                <div class="lc-txt">
+                  <span class="lc-name">Clarity Health</span>
+                  <span class="lc-sub">UX Design &middot; 2024</span>
+                </div>
+                <span class="lc-arrow">&#8599;</span>
+              </div>
+            </a>
+
+            <a class="layer-card" data-idx="1" href="#">
+              <div class="lc-img"><img src="../newmix_files/gallery_4.webp" alt="Meridian Finance" /></div>
+              <div class="lc-meta">
+                <span class="lc-n">02</span>
+                <div class="lc-txt">
+                  <span class="lc-name">Meridian Finance Platform</span>
+                  <span class="lc-sub">Product Design &middot; 2024</span>
+                </div>
+                <span class="lc-arrow">&#8599;</span>
+              </div>
+            </a>
+
+            <a class="layer-card" data-idx="2" href="#">
+              <div class="lc-img"><img src="../newmix_files/gallery_7.webp" alt="Nucleus Design Language" /></div>
+              <div class="lc-meta">
+                <span class="lc-n">03</span>
+                <div class="lc-txt">
+                  <span class="lc-name">Nucleus Design Language</span>
+                  <span class="lc-sub">Design Systems &middot; 2023</span>
+                </div>
+                <span class="lc-arrow">&#8599;</span>
+              </div>
+            </a>
+
+            <a class="layer-card" data-idx="3" href="#">
+              <div class="lc-img"><img src="../newmix_files/gallery_11.webp" alt="Volta Brand Identity" /></div>
+              <div class="lc-meta">
+                <span class="lc-n">04</span>
+                <div class="lc-txt">
+                  <span class="lc-name">Volta Brand Identity</span>
+                  <span class="lc-sub">Creative Direction &middot; 2023</span>
+                </div>
+                <span class="lc-arrow">&#8599;</span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="layer-progress">
+            <span class="lp-active" id="layerActiveNum">01</span>
+            <div class="lp-bar"><div class="lp-fill" id="layerFill"></div></div>
+            <span class="lp-total">04</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+      <div class="gallery-track">
+
+        <div class="gallery-item" style="width:100%">
+          <img src="../newmix_files/gallery_1.webp" alt=""/>
+          <div class="gi-label"><span class="gi-num">01</span><span class="gi-title">Clarity Health — App Redesign</span></div>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_2.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_3.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item gi-center" style="width:72%">
+          <img src="../newmix_files/gallery_4.webp" alt=""/>
+          <div class="gi-label"><span class="gi-num">02</span><span class="gi-title">Meridian Finance Platform</span></div>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:2"><img src="../newmix_files/gallery_5.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_6.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item" style="width:100%">
+          <img src="../newmix_files/gallery_7.webp" alt=""/>
+          <div class="gi-label"><span class="gi-num">03</span><span class="gi-title">Nucleus Design System</span></div>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_8.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_9.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_10.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item gi-center" style="width:80%">
+          <img src="../newmix_files/gallery_11.webp" alt=""/>
+          <div class="gi-label"><span class="gi-num">04</span><span class="gi-title">Volta — Brand Identity</span></div>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_12.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:2"><img src="../newmix_files/gallery_13.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item" style="width:100%">
+          <img src="../newmix_files/gallery_14.webp" alt=""/>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_15.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_16.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item gi-center" style="width:65%">
+          <img src="../newmix_files/gallery_17.webp" alt=""/>
+          <div class="gi-label"><span class="gi-num">05</span><span class="gi-title">Aura — Mobile Banking</span></div>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:2"><img src="../newmix_files/gallery_18.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_19.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item" style="width:100%">
+          <img src="../newmix_files/gallery_20.webp" alt=""/>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_21.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_22.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_23.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item gi-center" style="width:75%">
+          <img src="../newmix_files/gallery_24.webp" alt=""/>
+        </div>
+
+        <div class="gallery-row">
+          <div class="gallery-item" style="flex:1"><img src="../newmix_files/gallery_25.webp" alt=""/></div>
+          <div class="gallery-item" style="flex:1.4"><img src="../newmix_files/gallery_26.webp" alt=""/></div>
+        </div>
+
+        <div class="gallery-item" style="width:100%">
+          <img src="../newmix_files/gallery_27.webp" alt=""/>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee-section">
+      <div class="marquee-wrap">
+        <div class="mq-fade mq-fade--l"></div>
+        <div class="mq-fade mq-fade--r"></div>
+        <div class="marquee-track">
+          <div class="mq-item"><img src="../newmix_files/gallery_2.webp"  alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_5.webp"  alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_8.webp"  alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_11.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_14.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_17.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_20.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_23.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_2.webp"  alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_5.webp"  alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_8.webp"  alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_11.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_14.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_17.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_20.webp" alt=""/></div>
+          <div class="mq-item"><img src="../newmix_files/gallery_23.webp" alt=""/></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement-section">
+      <div class="si">
+        <h2 class="stmt-h">Great design<br>moves people.</h2>
+        <p class="stmt-sub">Available for new projects &mdash; let's talk</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <div class="si">
+        <div class="about-grid">
+          <div class="about-left">
+            <p class="eyebrow">About</p>
+            <h2>Product designer<br>based remotely.</h2>
+            <p class="about-bio">I'm Priyanka Shanmugham, a product designer focused on crafting high-quality digital experiences. I work at the intersection of strategy, interaction design, and visual systems — turning complex problems into elegant, usable products.</p>
+            <a href="#" class="tlink">View Resume &rarr;</a>
+          </div>
+          <div class="about-right">
+            <div class="about-meta">
+              <div class="meta-row"><span>Role</span><span>Product Designer</span></div>
+              <div class="meta-row"><span>Based</span><span>Remote</span></div>
+              <div class="meta-row"><span>Available</span><span>Yes</span></div>
+              <div class="meta-row"><span>Experience</span><span>5+ Years</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="si">
+        <p class="eyebrow">Contact Us</p>
+        <h2 class="contact-h">Let's work<br>together.</h2>
+        <p class="contact-desc">Have a project in mind? Let's create something remarkable.</p>
+        <a href="mailto:hello@priyanka.design" class="contact-email">hello@priyanka.design</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="si footer-grid">
+        <div class="footer-col">
+          <a href="/" class="footer-logo">PS</a>
+          <p>Product Designer &amp; UX Strategist</p>
+          <p>Remote, Worldwide</p>
+          <p class="footer-copy">&copy; 2024 Priyanka Shanmugham<br>All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <nav class="footer-nav">
+            <a href="#">Behance</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Dribbble</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-strip">
+        <span>h e l l o @ p r i y a n k a . d e s i g n &nbsp;&nbsp;&nbsp;</span>
+        <span aria-hidden="true">h e l l o @ p r i y a n k a . d e s i g n &nbsp;&nbsp;&nbsp;</span>
+        <span aria-hidden="true">h e l l o @ p r i y a n k a . d e s i g n &nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </footer>
+
+  </div><!-- /content-sheet -->
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="character-scene.js"></script>
+  <script src="layer-scroller.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

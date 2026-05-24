@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka - Design Portfolio</title>
+  <meta name="description" content="I believe that great design is about crafting high-quality products that are aesthetically pleasing and easy to use." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-black">
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a class="logo" href="/">PS</a>
+      <nav class="nav-desktop">
+        <a href="#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="assets/images/contact/Resume.png" target="_blank">Contact</a>
+      </nav>
+      <a href="assets/images/contact/Resume.png" target="_blank" class="header-cta">Available</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <svg viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="bar"     y="0"    width="20" height="1.4" rx="0.7" fill="white"/>
+          <rect class="bar-mid" y="6.8"  width="20" height="1.4" rx="0.7" fill="white"/>
+          <rect class="bar"     y="13.6" width="20" height="1.4" rx="0.7" fill="white"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#work"                                        class="mobile-link">Work</a>
+      <a href="about.html"                                   class="mobile-link">About</a>
+      <a href="assets/images/contact/Resume.png" target="_blank" class="mobile-link">Contact</a>
+    </nav>
+    <div class="mobile-menu-bottom">
+      <span>Priyanka Shanmugham — Product Designer</span>
+    </div>
+  </div>
+
+  <!-- ─── HERO (particle text) ─── -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <p class="hero-sub" id="heroSub">Product Designer &middot; UX Strategist</p>
+    <div class="hero-scroll-hint">
+      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 7.5L9.5 16.5L18.5 7.5"  stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M0.5 0.5L9.5 9.5L18.5 0.5"   stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ─── CONTENT SHEET ─── -->
+  <div class="content-sheet">
+
+    <!-- ─── INTRO / BIO (Priyanks photo + short bio) ─── -->
+    <div class="intro-wrap">
+      <div class="intro-sticky">
+        <video class="intro-img" id="introVideo" src="../Priyanka_Intro1.mp4" muted playsinline preload="auto"></video>
+        <div class="intro-overlay"></div>
+        <div class="intro-content si">
+          <p class="eyebrow">Product Designer &middot; 5+ Years</p>
+          <h2 class="intro-bio">I believe great design is about crafting high-quality products that are aesthetically pleasing and easy to use.</h2>
+          <a href="about.html" class="tlink">More About Me &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PROJECTS ─── -->
+    <section class="projects-section" id="work">
+
+      <!-- 01 AIM Monitoring — image left, text right -->
+      <div class="project-panel" data-anim="tilt">
+        <div class="project-panel-inner si">
+          <div class="project-img-side">
+            <a href="projects/aim-monitoring.html" class="project-img-wrap">
+              <img src="assets/images/projects/aim/AIM_Thumb.png" alt="AIM Monitoring" />
+            </a>
+          </div>
+          <div class="project-text-side">
+            <span class="project-num">01</span>
+            <h2 class="project-title">AIM Monitoring</h2>
+            <p class="project-desc">Cost Management, Performance Optimisation, End-to-End Visibility, Model Comparison and Optimisation.</p>
+            <div class="project-meta">UX Design &middot; New Relic &middot; 2024&ndash;25</div>
+            <a href="projects/aim-monitoring.html" class="project-cta">See Case Study &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Cloud Observability — text left, image right -->
+      <div class="project-panel reverse" data-anim="wipe">
+        <div class="project-panel-inner si">
+          <div class="project-text-side">
+            <span class="project-num">02</span>
+            <h2 class="project-title">Cloud Observability</h2>
+            <p class="project-desc">A unified cloud observability platform provides full visibility into the health and performance of each layer of your environment at a glance.</p>
+            <div class="project-meta">Product Design &middot; New Relic &middot; 2024</div>
+            <a href="projects/cloud-observability.html" class="project-cta">See Case Study &rarr;</a>
+          </div>
+          <div class="project-img-side">
+            <a href="projects/cloud-observability.html" class="project-img-wrap">
+              <img src="assets/images/projects/oci/OCI-Thumb1.png" alt="Cloud Observability" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 DB 360 — image left, text right -->
+      <div class="project-panel" data-anim="zoom">
+        <div class="project-panel-inner si">
+          <div class="project-img-side">
+            <a href="projects/db-360.html" class="project-img-wrap">
+              <img src="assets/images/projects/db360/DB360-Thumb.png" alt="DB 360" />
+            </a>
+          </div>
+          <div class="project-text-side">
+            <span class="project-num">03</span>
+            <h2 class="project-title">DB 360</h2>
+            <p class="project-desc">Three Pillars of DB troubleshooting — Query Performance, Resource Consumption, and Object Health.</p>
+            <div class="project-meta">UX Design &middot; New Relic &middot; 2024</div>
+            <a href="projects/db-360.html" class="project-cta">See Case Study &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 Keka HR — text left, image right -->
+      <div class="project-panel reverse" data-anim="float">
+        <div class="project-panel-inner si">
+          <div class="project-text-side">
+            <span class="project-num">04</span>
+            <h2 class="project-title">Keka HR Analytics Dashboard</h2>
+            <p class="project-desc">A powerful customisable dashboard that allows HR professionals and managers to gain quick, tailored insights into HR data.</p>
+            <div class="project-meta">Dashboard Design &middot; Keka &middot; 2023</div>
+            <a href="projects/keka-hr-analytics-dashboard.html" class="project-cta">See Case Study &rarr;</a>
+          </div>
+          <div class="project-img-side">
+            <a href="projects/keka-hr-analytics-dashboard.html" class="project-img-wrap">
+              <img src="assets/images/projects/keka-hr-dashboard/Keka-Thumb1.png" alt="Keka HR Analytics" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 R&R — image left, text right -->
+      <div class="project-panel" data-anim="drift">
+        <div class="project-panel-inner si">
+          <div class="project-img-side">
+            <a href="projects/rewards-recognition.html" class="project-img-wrap">
+              <img src="assets/images/projects/rnr/RR-Thumb.png" alt="Rewards and Recognition" />
+            </a>
+          </div>
+          <div class="project-text-side">
+            <span class="project-num">05</span>
+            <h2 class="project-title">Rewards &amp; Recognition</h2>
+            <p class="project-desc">R&amp;R directly supports employee engagement, performance, and overall organisational success.</p>
+            <div class="project-meta">UX Design &middot; Keka &middot; 2023</div>
+            <a href="projects/rewards-recognition.html" class="project-cta">See Case Study &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 Azure UI — text left, image right -->
+      <div class="project-panel reverse" data-anim="glide">
+        <div class="project-panel-inner si">
+          <div class="project-text-side">
+            <span class="project-num">06</span>
+            <h2 class="project-title">Azure UI</h2>
+            <p class="project-desc">A focused interface design project for cloud infrastructure workflows and enterprise product experiences.</p>
+            <div class="project-meta">Interface Design &middot; 2023</div>
+            <a href="projects/azure-ui.html" class="project-cta">See Case Study &rarr;</a>
+          </div>
+          <div class="project-img-side">
+            <a href="projects/azure-ui.html" class="project-img-wrap">
+              <img src="assets/images/projects/azure-ui/AZ-Thumb.png" alt="Azure UI" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─── MARQUEE ─── -->
+    <section class="marquee-section">
+      <div class="marquee-wrap">
+        <div class="mq-fade mq-fade--l"></div>
+        <div class="mq-fade mq-fade--r"></div>
+        <div class="marquee-track">
+          <div class="mq-item"><img src="assets/images/projects/aim/AIM_Thumb.png"               alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/oci/OCI-Thumb1.png"              alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/db360/DB360-Thumb.png"           alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/keka-hr-dashboard/Keka-Thumb1.png" alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/rnr/RR-Thumb.png"                alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/azure-ui/AZ-Thumb.png"           alt=""/></div>
+          <!-- duplicate for seamless loop -->
+          <div class="mq-item"><img src="assets/images/projects/aim/AIM_Thumb.png"               alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/oci/OCI-Thumb1.png"              alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/db360/DB360-Thumb.png"           alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/keka-hr-dashboard/Keka-Thumb1.png" alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/rnr/RR-Thumb.png"                alt=""/></div>
+          <div class="mq-item"><img src="assets/images/projects/azure-ui/AZ-Thumb.png"           alt=""/></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── STATEMENT ─── -->
+    <section class="statement-section">
+      <div class="si">
+        <h2 class="stmt-h">Great design<br>moves people.</h2>
+        <p class="stmt-sub">Available for new projects &mdash; let's talk</p>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT (homepage snippet) ─── -->
+    <section class="about-section" id="about">
+      <div class="si">
+        <div class="about-grid">
+          <div class="about-left">
+            <p class="eyebrow">About</p>
+            <h2>Product designer<br>based remotely.</h2>
+            <p class="about-bio">I'm Priyanka Shanmugham, a product designer focused on crafting high-quality digital experiences. I work at the intersection of strategy, interaction design, and visual systems — turning complex problems into elegant, usable products.</p>
+            <a href="about.html" class="tlink">Full Story &rarr;</a>
+          </div>
+          <div class="about-right">
+            <div class="about-meta">
+              <div class="meta-row"><span>Role</span><span>Product Designer</span></div>
+              <div class="meta-row"><span>Based</span><span>Remote</span></div>
+              <div class="meta-row"><span>Available</span><span>Yes</span></div>
+              <div class="meta-row"><span>Experience</span><span>5+ Years</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section class="contact-section" id="contact">
+      <div class="si">
+        <p class="eyebrow">Contact</p>
+        <h2 class="contact-h">Let's work<br>together.</h2>
+        <p class="contact-desc">Have a project in mind? Let's create something remarkable.</p>
+        <a href="assets/images/contact/Resume.png" target="_blank" class="contact-email">View Resume &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <div class="si footer-grid">
+        <div class="footer-col">
+          <a href="/" class="footer-logo">PS</a>
+          <p>Product Designer &amp; UX Strategist</p>
+          <p>Remote, Worldwide</p>
+          <p class="footer-copy">&copy; 2025 Priyanka Shanmugham<br>All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <nav class="footer-nav">
+            <a href="/">Home</a>
+            <a href="#work">Work</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <nav class="footer-nav">
+            <a href="assets/images/contact/Resume.png" target="_blank">contact.</a>
+            <a href="about.html">about.</a>
+            <a href="#work">works.</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-strip">
+        <span>Priyanka Shanmugham &nbsp;&mdash;&nbsp; Product Designer &nbsp;&mdash;&nbsp; UX Strategist &nbsp;&mdash;&nbsp; Remote, Worldwide &nbsp;&nbsp;&nbsp;</span>
+        <span aria-hidden="true">Priyanka Shanmugham &nbsp;&mdash;&nbsp; Product Designer &nbsp;&mdash;&nbsp; UX Strategist &nbsp;&mdash;&nbsp; Remote, Worldwide &nbsp;&nbsp;&nbsp;</span>
+        <span aria-hidden="true">Priyanka Shanmugham &nbsp;&mdash;&nbsp; Product Designer &nbsp;&mdash;&nbsp; UX Strategist &nbsp;&mdash;&nbsp; Remote, Worldwide &nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </footer>
+
+  </div><!-- /content-sheet -->
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

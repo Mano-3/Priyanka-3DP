@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka Shanmugham — Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Outfit:wght@200;300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing">
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noise)" opacity="0.04" />
+    </svg>
+  </div>
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-eyebrow">Designer &middot; Creative Director</div>
+
+    <div class="hero-name" id="heroName">
+      <div class="name-line name-line--first">
+        <span class="char-wrap" data-char="P"><span class="char">P</span></span>
+        <span class="char-wrap" data-char="R"><span class="char">R</span></span>
+        <span class="char-wrap" data-char="I"><span class="char">I</span></span>
+        <span class="char-wrap" data-char="Y"><span class="char">Y</span></span>
+        <span class="char-wrap" data-char="A"><span class="char">A</span></span>
+        <span class="char-wrap" data-char="N"><span class="char">N</span></span>
+        <span class="char-wrap" data-char="K"><span class="char">K</span></span>
+        <span class="char-wrap" data-char="A"><span class="char">A</span></span>
+      </div>
+      <div class="name-line name-line--last">
+        <span class="last-name">Shanmugham</span>
+      </div>
+    </div>
+
+    <div class="hero-clock" id="heroClock">00:00:00</div>
+
+    <div class="hero-scroll-label">Scroll to explore</div>
+
+    <div class="scan-line" aria-hidden="true"></div>
+  </section>
+
+  <!-- SECTION 2: VIDEO SCRUB -->
+  <section class="video-section" id="videoSection">
+    <div class="video-sticky">
+      <video
+        id="scrubVideo"
+        src="Priyanka_Intro1.mp4"
+        muted
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      ></video>
+      <div class="video-overlay-left"></div>
+      <div class="vignette-pulse" id="vignettePulse" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BIO -->
+  <section class="bio-section" id="bioSection">
+    <div class="bio-sticky">
+      <div class="bio-content">
+        <div class="bio-label">[ About ]</div>
+
+        <blockquote class="bio-quote" id="bioQuote">
+          <!-- Words injected by JS -->
+        </blockquote>
+
+        <div class="bio-rule" id="bioRule"></div>
+
+        <div class="bio-meta">
+          <div class="bio-meta-col bio-meta-col--keys">
+            <div class="meta-item" data-delay="0">Role</div>
+            <div class="meta-item" data-delay="80">Based</div>
+            <div class="meta-item" data-delay="160">Available</div>
+          </div>
+          <div class="bio-meta-col bio-meta-col--values">
+            <div class="meta-item" data-delay="0">Product Designer</div>
+            <div class="meta-item" data-delay="80">Remote</div>
+            <div class="meta-item" data-delay="160">Yes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PROJECTS -->
+  <section class="projects-section" id="projectsSection">
+    <div class="projects-sticky" id="projectsSticky">
+      <div class="projects-sidebar-label">Selected Work</div>
+
+      <div class="projects-track" id="projectsTrack">
+        <div class="project-card interactive" data-index="0">
+          <div class="card-number">01</div>
+          <div class="card-category">UX Strategy</div>
+          <div class="card-title">Clarity Health<br /><em>App Redesign</em></div>
+          <div class="card-corner card-corner--tl"></div>
+          <div class="card-corner card-corner--br"></div>
+        </div>
+
+        <div class="project-card interactive" data-index="1">
+          <div class="card-number">02</div>
+          <div class="card-category">Product Design</div>
+          <div class="card-title">Meridian<br /><em>Finance Platform</em></div>
+          <div class="card-corner card-corner--tl"></div>
+          <div class="card-corner card-corner--br"></div>
+        </div>
+
+        <div class="project-card interactive" data-index="2">
+          <div class="card-number">03</div>
+          <div class="card-category">Design Systems</div>
+          <div class="card-title">Nucleus<br /><em>Design Language</em></div>
+          <div class="card-corner card-corner--tl"></div>
+          <div class="card-corner card-corner--br"></div>
+        </div>
+
+        <div class="project-card interactive" data-index="3">
+          <div class="card-number">04</div>
+          <div class="card-category">Creative Direction</div>
+          <div class="card-title">Volta<br /><em>Brand Identity</em></div>
+          <div class="card-corner card-corner--tl"></div>
+          <div class="card-corner card-corner--br"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-watermark" aria-hidden="true">PRIYANKA</div>
+    <div class="footer-top-rule"></div>
+    <div class="footer-inner">
+      <div class="footer-col footer-col--left">
+        <div class="footer-monogram">PS</div>
+      </div>
+      <div class="footer-col footer-col--center">
+        <p class="footer-available">
+          <span class="availability-dot">●</span>
+          <em>Available for new projects</em>
+        </p>
+      </div>
+      <div class="footer-col footer-col--right">
+        <nav class="footer-nav">
+          <a href="#" class="footer-link interactive">Behance</a>
+          <a href="#" class="footer-link interactive">LinkedIn</a>
+          <a href="#" class="footer-link interactive">Dribbble</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Priyanka Shanmugham</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

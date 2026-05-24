@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code dev tooling
+.claude/
+
+# Large reference folders
+my-video/
+Portfolio-Content/
+
+# Reference HTML scraped from other sites
+Works — Jack Watkins_files/
+Works — Jack Watkins.html
+
+# Cloned sub-repo (tracked separately)
+Priyanka-3DP/
+
+# Dependencies
+node_modules/
+
+# Zip archives
+*.zip
