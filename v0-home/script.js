@@ -71,6 +71,16 @@
     });
   });
 
+  /* ── Name title spotlight ── */
+  const nameTitle = document.querySelector('.name-title');
+  if (nameTitle) {
+    nameTitle.addEventListener('mousemove', e => {
+      const r = nameTitle.getBoundingClientRect();
+      nameTitle.style.setProperty('--mx', ((e.clientX - r.left) / r.width  * 100).toFixed(1) + '%');
+      nameTitle.style.setProperty('--my', ((e.clientY - r.top)  / r.height * 100).toFixed(1) + '%');
+    }, { passive: true });
+  }
+
   /* ── Mobile menu ── */
   const menuBtn    = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
